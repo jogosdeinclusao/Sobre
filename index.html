@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos de Inclusão</title>
+    <link rel="icon" href="https://jogosdeinclusao.github.io/iconejogosdeinclusao.png" type="image/png">
+    <link rel="stylesheet" href="https://jogosdeinclusao.github.io/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            flex: 1;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .social {
+            margin-top: 40px;
+        }
+
+        .social h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-buttons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social-buttons li {
+            margin: 10px 0;
+        }
+
+        .social-buttons a {
+            text-decoration: none;
+        }
+
+        .social-buttons button {
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+
+        .social-buttons button:hover {
+            transform: scale(1.05);
+        }
+
+        .instagram {
+            background-color: #E4405F; /* Rosa Instagram */
+        }
+
+        .tiktok {
+            background-color: #333; /* Cinza Escuro TikTok */
+        }
+
+        .youtube {
+            background-color: #FF0000; /* Vermelho YouTube */
+        }
+
+        .threads {
+            background-color: #7D7D7D; /* Cinza Intermediário Threads */
+        }
+
+        .bluesky {
+            background-color: #00AAB8; /* Azul Ciano BlueSky */
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        .subscribe-info {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        /* Mobile menu styles */
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            nav.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #4CAF50;
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://jogosdeinclusao.github.io/logojogosdeinclusao.png" alt="Logo Jogos de Inclusão" class="logo">
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <nav id="menu">
+            <a href="https://jogosdeinclusao.github.io">Início</a>
+            <a href="https://jogosdeinclusao.github.io/Jogos">Jogar</a>
+            <a href="https://jogosdeinclusao.github.io/Sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <body> <!-- Inicio do corpo da página -->
+
+        ... <!-- Conteúdo da página -->
+
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+      </body> <!-- Fim do corpo da página -->
+
+    <div class="container">
+        <h1>Sobre o Jogos de Inclusão</h1>
+        <p class="description">
+            Esse é um Projeto Integrador do 3º Ano de Informática Integrado ao Ensino Médio no IFPA. O presente projeto integrador é uma iniciativa dos alunos do 3º ano do curso de Informática Integrado ao Ensino Médio do Instituto Federal do Pará (IFPA). Os integrantes deste projeto são Bruno dos Santos, Pedro Enrique e Pedro Lucas.
+        </p>
+
+        <h2>Qual objetivo do site?</h2>
+        <p class="description">
+            O projeto consiste na criação de um site inovador dedicado ao desenvolvimento de jogos lúdicos com o propósito de auxiliar no aprendizado de autistas e alunos com Transtorno do Déficit de Atenção e Hiperatividade (TDAH). Este site é uma ferramenta pedagógica projetada para melhorar a capacidade de memorização e promover a resolução de problemas matemáticos por meio de atividades interativas. Os jogos oferecidos na plataforma incluem jogos da memória e outras ferramentas eficazes que visam tanto o treinamento cognitivo quanto a diversão. A plataforma foi cuidadosamente desenvolvida para criar um ambiente inclusivo e acessível, garantindo que todos os usuários possam desfrutar de uma experiência educativa enriquecedora e adaptada às suas necessidades específicas.
+        </p>
+
+        <h2>Como surgiu nosso projeto?</h2>
+        <p class="description">
+            A concepção deste projeto ocorreu nas últimas horas, impulsionada pela necessidade de evitar a reprovação no IFPA e a consequente realização da recuperação do Projeto Integrador. Pedro Enrique sugeriu a fundação deste projeto, embora Bruno e Pedro Lucas inicialmente tivessem dúvidas quanto à viabilidade da ideia. Apesar das incertezas, Pedro, confiante no potencial do projeto, desenvolveu o site "Jogos de Inclusão", hospedando-o no GitHub e gerenciando as contas nas redes sociais. Em um curto espaço de tempo, Pedro também criou um aplicativo relacionado ao projeto, que, em menos de uma semana, conquistou considerável visibilidade nas redes sociais, tornando-se o projeto mais destacado do IFPA Ananindeua. Agora, aguardamos a aprovação do projeto na Siepex, com a apresentação programada para a Semana Integrada de Ensino, Pesquisa e Extensão.
+        </p>
+
+        <div class="social">
+            <h2>Redes Sociais:</h2>
+            <ul class="social-buttons">
+                <li><a href="https://www.instagram.com/jogosdeinclusao"><button class="instagram">Instagram</button></a></li>
+                <li><a href="https://www.tiktok.com/@jogosdeinclusao"><button class="tiktok">TikTok</button></a></li>
+                <li><a href="https://www.youtube.com/channel/UCqQT5mHf0dz79Aq6U8rKK-w"><button class="youtube">YouTube</button></a></li>
+                <li><a href="https://www.threads.net/@jogosdeinclusao"><button class="threads">Threads</button></a></li>
+                <li><a href="https://jogosdeinclusao.bsky.social"><button class="bluesky">BlueSky</button></a></li>
+            </ul>
+            <div class="subscribe-info">
+                Inscreva-se em nosso canal no YouTube e curta o vídeo abaixo:
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/k0uyq-XpLBQ" allowfullscreen></iframe>
+            </div>
+            <p class="footer-text">Esse site foi hospedado pelo Github Pages.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jogos de Inclusão. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

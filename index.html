@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos de Inclusão</title>
+    <link rel="icon" href="iconejogosdeinclusao.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logojogosdeinclusao.png" alt="Logo Jogos de Inclusão">
+            <span class="site-name">Jogos de Inclusão</span>
+        </div>
+
+        <!-- Menu para desktop -->
+        <div class="menu">
+            <a href="https://jogosdeinclusao.github.io/">Início</a>
+            <a href="https://jogosdeinclusao.github.io/Jogos/">Jogos</a>
+            <a href="https://jogosdeinclusao.github.io/Sobre/">Sobre</a>
+        </div>
+
+        <!-- Menu tipo hambúrguer para mobile -->
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="https://jogosdeinclusao.github.io/">Início</a>
+            <a href="https://jogosdeinclusao.github.io/Jogos/">Jogos</a>
+            <a href="https://jogosdeinclusao.github.io/Sobre/">Sobre</a>
+        </div>
+    </div>
+
+        <!-- VLibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </header>
+
+    <!-- Conteúdo Inicial -->
+    <div class="container">
+        <h1>Sobre o Jogos de Inclusão</h1>
+        <p class="description">
+            Esse é um Projeto Integrador do 3º Ano de Informática Integrado ao Ensino Médio no IFPA. O presente projeto integrador é uma iniciativa dos alunos do 3º ano do curso de Informática Integrado ao Ensino Médio do Instituto Federal do Pará (IFPA). Os integrantes deste projeto são Bruno dos Santos, Pedro Enrique e Pedro Lucas.
+        </p>
+
+        <h2>Qual objetivo do site?</h2>
+        <p class="description">
+            O projeto consiste na criação de um site inovador dedicado ao desenvolvimento de jogos lúdicos com o propósito de auxiliar no aprendizado de autistas e alunos com Transtorno do Déficit de Atenção e Hiperatividade (TDAH). Este site é uma ferramenta pedagógica projetada para melhorar a capacidade de memorização e promover a resolução de problemas matemáticos por meio de atividades interativas. Os jogos oferecidos na plataforma incluem jogos da memória e outras ferramentas eficazes que visam tanto o treinamento cognitivo quanto a diversão. A plataforma foi cuidadosamente desenvolvida para criar um ambiente inclusivo e acessível, garantindo que todos os usuários possam desfrutar de uma experiência educativa enriquecedora e adaptada às suas necessidades específicas.
+        </p>
+
+        <h2>Como surgiu nosso projeto?</h2>
+        <p class="description">
+            A concepção deste projeto ocorreu nas últimas horas, impulsionada pela necessidade de evitar a reprovação no IFPA e a consequente realização da recuperação do Projeto Integrador. Pedro Enrique sugeriu a fundação deste projeto, embora Bruno e Pedro Lucas inicialmente tivessem dúvidas quanto à viabilidade da ideia. Apesar das incertezas, Pedro, confiante no potencial do projeto, desenvolveu o site "Jogos de Inclusão", hospedando-o no GitHub e gerenciando as contas nas redes sociais. Em um curto espaço de tempo, Pedro também criou um aplicativo relacionado ao projeto, que, em menos de uma semana, conquistou considerável visibilidade nas redes sociais, tornando-se o projeto mais destacado do IFPA Ananindeua. Agora, aguardamos a aprovação do projeto na Siepex, com a apresentação programada para a Semana Integrada de Ensino, Pesquisa e Extensão.
+        </p>
+
+        <div class="social">
+            <h2>Redes Sociais:</h2>
+            <ul class="social-buttons">
+                <li><a href="https://www.instagram.com/jogosdeinclusao"><button class="instagram">Instagram</button></a></li>
+                <li><a href="https://www.tiktok.com/@jogosdeinclusao"><button class="tiktok">TikTok</button></a></li>
+                <li><a href="https://www.youtube.com/channel/UCqQT5mHf0dz79Aq6U8rKK-w"><button class="youtube">YouTube</button></a></li>
+                <li><a href="https://www.threads.net/@jogosdeinclusao"><button class="threads">Threads</button></a></li>
+                <li><a href="https://jogosdeinclusao.bsky.social"><button class="bluesky">BlueSky</button></a></li>
+            </ul>
+            <div class="subscribe-info">
+                Inscreva-se em nosso canal no YouTube e curta o vídeo abaixo:
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/k0uyq-XpLBQ" allowfullscreen></iframe>
+            </div>
+            <p class="footer-text">Esse site foi hospedado pelo Github Pages.</p>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Jogos de Inclusão. Todos os direitos reservados.</p>
+        <button id="toggle-theme">🌞</button>
+    </footer>
+
+    <script>
+        // Função para alternar o menu tipo hambúrguer
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

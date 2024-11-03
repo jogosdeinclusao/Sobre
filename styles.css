@@ -1,0 +1,240 @@
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 0px 0px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        /* Menu superior */
+        .navbar {
+            background-color: #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Logo e nome do site */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .site-name {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        /* Links do menu */
+        .menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #e0e0e0;
+        }
+
+        /* Menu tipo hambúrguer - Mobile */
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #4CAF50;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: calc(100% - 40px);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        } 
+
+        /* Conteúdo Inicial */
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            flex: 1;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .social {
+            margin-top: 40px;
+        }
+
+        .social h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-buttons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social-buttons li {
+            margin: 10px 0;
+        }
+
+        .social-buttons a {
+            text-decoration: none;
+        }
+
+        .social-buttons button {
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+
+        .social-buttons button:hover {
+            transform: scale(1.05);
+        }
+
+        .instagram {
+            background-color: #E4405F; /* Rosa Instagram */
+        }
+
+        .tiktok {
+            background-color: #333; /* Cinza Escuro TikTok */
+        }
+
+        .youtube {
+            background-color: #FF0000; /* Vermelho YouTube */
+        }
+
+        .threads {
+            background-color: #7D7D7D; /* Cinza Intermediário Threads */
+        }
+
+        .bluesky {
+            background-color: #00AAB8; /* Azul Ciano BlueSky */
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        .subscribe-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+                /* Rodapé */
+                footer {
+                    background-color: none;
+                    text-align: center;
+                    padding: 10px;
+                    margin-top: 15px;
+                    border-top: 0px solid #ddd;
+                }
+        
+                /* Responsivo */
+                @media (max-width: 768px) {
+                    .menu {
+                        display: none;
+                    }
+        
+                    .hamburger {
+                        display: block;
+                    }
+        
+                    .mobile-menu a {
+                        width: 100%;
+                    }
+                }
+            
+                #toggle-theme {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                
+                #toggle-theme:hover {
+                    background-color: #45a049;
+                }
+
+                /* Tema Claro */
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
